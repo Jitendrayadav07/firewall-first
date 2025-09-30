@@ -13,6 +13,9 @@ RUN npm install --production
 # Copy the rest of the application code
 COPY . .
 
+# Copy environment file
+COPY .env .env
+
 # Expose the port your app will run on
 EXPOSE 4000
 
